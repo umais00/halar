@@ -1,20 +1,31 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { useEffect, useState, useCallback } from "react";
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Dropdown from "./dropdown";
+
+// Custom debounce function
+const debounce = (func, delay) => {
+  let timeoutId;
+  return (...args) => {
+    if (timeoutId) clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(null, args);
+    }, delay);
+  };
+};
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [clicked, setClicked] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.scrollY > 0 ? setIsSticky(true) : setIsSticky(false);
-    };
+  const handleScroll = debounce(() => {
+    setIsSticky(window.scrollY > 0);
+  }, 100);
 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   useEffect(() => {
     if (clicked) {
@@ -26,9 +37,9 @@ const Navbar = () => {
     return () => document.body.classList.remove("overflow-hidden", "fixed");
   }, [clicked]);
 
-  const handleMenuClick = () => {
-    setClicked(!clicked);
-  };
+  const handleMenuClick = useCallback(() => {
+    setClicked((prev) => !prev);
+  }, []);
 
   return (
     <nav
@@ -36,7 +47,7 @@ const Navbar = () => {
         isSticky ? "bg-slate-950" : "bg-transparent"
       } ${
         clicked ? "w-screen h-screen" : "h-[12vh]"
-      } transition-all duration-500 `}
+      } transition-all duration-100`}
     >
       <div
         className={`${
@@ -92,9 +103,9 @@ const Navbar = () => {
             options={[
               "What are we?",
               "Chairman's message",
-              "director's message",
+              "Director's message",
               "Faculty of H-iet",
-              "Adminstration",
+              "Administration",
             ]}
             links={[
               "about",
@@ -109,9 +120,9 @@ const Navbar = () => {
           <Dropdown
             titlee={"Departments"}
             options={[
-              "Department of CS / Information technology",
-              "Department of English language program",
-              "Department of vocational training",
+              "Department of CS / Information Technology",
+              "Department of English Language Program",
+              "Department of Vocational Training",
             ]}
             links={["IT", "English", "vocational"]}
           />
