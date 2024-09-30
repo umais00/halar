@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 
 const Home = () => (
   <main className="flex flex-wrap lg:px-20 n:px-3">
-    <section className="w-screen flex n:flex-col-reverse md:flex-row">
+    <section className="w-full flex n:flex-col-reverse md:flex-row">
       <div className="px-10 n:p-0 n:w-full md:w-1/4 lg:w-1/2 n:h-[50vh] md:h-[88vh] flex justify-center flex-col gap-10 md:items-start n:items-center">
         <h1 className="lg:text-5xl n:text-3xl font-bold text-[#FFF7F5] -mt-10">
           Halar Institute of Emerging Technologies
@@ -21,9 +21,7 @@ const Home = () => (
       </div>
       <div
         className="md:w-3/4 lg:w-1/2 n:w-full n:h-[50vh] bg-no-repeat bg-center n:bg-contain md:bg-cover md:h-[88vh]"
-        style={{
-          backgroundImage: 'url("el.png")',
-        }}
+        style={{ backgroundImage: 'url("el.png")' }}
       ></div>
     </section>
     <hr className="border-none bg-gray-700 my-10 w-screen h-2" />
@@ -31,7 +29,7 @@ const Home = () => (
       <h1 className=" text-5xl font-medium leading-tight text-primary text-center">
         What we offer!
       </h1>
-      <div className="flex n:flex-col sm:flex-row items-center w-full justify-center  gap-">
+      <div className="flex n:flex-col sm:flex-row items-center w-full justify-center ">
         <Card
           src="better future.webp"
           title="better future"
@@ -77,10 +75,10 @@ const Home = () => (
         <Button title="learn more" to="about" />
       </div>
     </section>
-    <hr className="border-none bg-gray-700 my-10 w-screen h-2" />
-    <section className="md:mt-64 n:my-32 lg:my-24 flex flex-col items-center">
+    <hr className="border-none bg-gray-700 my-10 w-screen overflow-hidden h-2" />
+    <section className="md:mt-64 n:my-32 lg:my-24 flex flex-col items-center w-full overflow-x-hidden">
       <h1 className="text-3xl font-bold py-5">Popular Departments</h1>
-      <div className=" flex n:flex-col sm:flex-row items-center n:w-screen md:w-[88.5vw] justify-center gap-10">
+      <div className=" flex n:flex-col sm:flex-row items-center n:w-full md:w-[88.5vw] justify-center gap-10">
         <Card
           src="py.webp"
           title="IT Department"
