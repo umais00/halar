@@ -39,7 +39,7 @@ function adminstration() {
           <h1 className="font-semibold text-[42px]">Office Bearer </h1>
           <div className="w-full flex-wrap gap-y-24 font-sans flex flex-row justify-center items-center px-8 gap-8">
             <Card2
-              image="female.jpg"
+              image="female.webp"
               name="Ms. Aisha Hassan"
               address="aisha.hassan@halariet.com"
               bio="Passionate Web developer, proficient in both front-end and back-end"
@@ -57,7 +57,7 @@ function adminstration() {
               ]}
             />
             <Card2
-              image="female.jpg"
+              image="female.webp"
               name="Ms. Qurat-ul-ain"
               address="qurat.saleem@halariet.com"
               bio="Self Taught Creative Professional with 3+years of experience"
@@ -93,7 +93,7 @@ function adminstration() {
           <h1 className="font-semibold text-[42px]">Director Admission's</h1>
           <div className="w-full flex-wrap gap-y-24 font-sans flex flex-row justify-center items-center px-8 gap-8">
             <Card2
-              image="female.jpg"
+              image="female.webp"
               name="Ms. Aisha Hassan"
               address="aisha.hassan@halariet.com"
               bio="Passionate Web developer, proficient in both front-end and back-end"
@@ -101,7 +101,7 @@ function adminstration() {
             />
 
             <Card2
-              image="female.jpg"
+              image="female.webp"
               name="Ms. Qurat-ul-ain"
               address="qurat.saleem@halariet.com"
               bio="Self Taught Creative Professional with 3+years of experience"

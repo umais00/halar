@@ -58,7 +58,7 @@ function faculty() {
             degree={["Master in English literature (UoK)"]}
           />
           <Card2
-            image="female.jpg"
+            image="female.webp"
             name="Ms. Unza Siddiqui"
             address="unza.siddiqui@halariet.com"
             bio="Self Taught Creative Professional with 3+years of experience"
@@ -72,14 +72,14 @@ function faculty() {
         <h1 className="font-semibold text-[42px]">Faculty Of VT</h1>
         <div className="w-full flex-wrap gap-y-24 font-sans flex flex-row justify-center items-center px-8 gap-8">
           <Card2
-            image="female.jpg"
+            image="female.webp"
             name="Ms. Hafeeza Arsalan"
             address="Lecturer (Beautician)"
             bio="Front end Developer, avid reader. Love to take a long walk, swim"
             degree={["Diploma in Beautician (SBTE)"]}
           />
           <Card2
-            image="female.jpg"
+            image="female.webp"
             name="Ms. Sehrish Waseem"
             address=""
             bio="Sewing Artist Lecturer - (Stitching & Dress Making)"

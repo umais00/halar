@@ -35,7 +35,7 @@ const about = () => {
       <div
         className="flex-grow z-10 bg-cover bg-center h-[60%] blur-sm"
         style={{
-          backgroundImage: 'url("hlr-about.jpg")',
+          backgroundImage: 'url("hlr-about.webp")',
         }}
       ></div>
       {/* <h1 className="text-8xl font-bold mb-4 self-center text-emerald-500">

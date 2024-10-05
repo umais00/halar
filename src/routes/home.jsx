@@ -21,7 +21,7 @@ const Home = () => (
       </div>
       <div
         className="md:w-3/4 lg:w-1/2 n:w-full n:h-[50vh] bg-no-repeat bg-center n:bg-contain md:bg-cover md:h-[88vh]"
-        style={{ backgroundImage: 'url("el.png")' }}
+        style={{ backgroundImage: 'url("el.webp")' }}
       ></div>
     </section>
     <hr className="border-none bg-gray-700 my-10 w-screen h-2" />
@@ -56,7 +56,7 @@ const Home = () => (
     <hr className="border-none bg-gray-700 my-10 w-screen h-2" />
     <section className="flex n:flex-col md:flex-row mt-40">
       <img
-        src="happy.png"
+        src="happy.webp"
         className="md:w-1/2 n:w-full"
         loading="lazy"
         alt="Happy Students"
@@ -95,7 +95,7 @@ const Home = () => (
           descstyle="text-xl font-bold mt-2"
         />
         <Card
-          src="qt.webp"
+          src="henna.webp"
           title="Training department"
           titlestyle="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           desc="vocational training"

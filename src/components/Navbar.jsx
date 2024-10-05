@@ -57,7 +57,7 @@ const Navbar = () => {
         } relative z-10`}
       >
         <img
-          src="logo.png"
+          src="logo.webp"
           loading="lazy"
           alt="HALAR"
           className={`w-max ${clicked && "hidden"} ${

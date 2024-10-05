@@ -21,7 +21,7 @@ const Dropdown = ({ options, titlee, links }) => {
   }, []);
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className=" relative inline-block text-left" ref={dropdownRef}>
       <div>
         <button
           onClick={toggleDropdown}
@@ -46,12 +46,16 @@ const Dropdown = ({ options, titlee, links }) => {
 
       {isOpen && (
         <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg ring-1 bg-[#0F172A] ring-black ring-opacity-5 focus:outline-none">
-          <div className="pt-1" role="menu" aria-orientation="vertical">
+          <div
+            className="pt-1 bg-white "
+            role="menu"
+            aria-orientation="vertical"
+          >
             {options.map((option, index) => (
               <a
                 key={index}
                 href={links[index]}
-                className="border-b-2 font-semibold border-b-[#0F172A] block px-4 py-2 text-sm text-white-700 hover:bg-gray-100 hover:text-black transition-colors duration-[400ms]"
+                className="border-b-2 font-semibold border-b-[#0F172A] block px-4 py-2 text-sm text-white-700 hover:bg-gray-300 hover:text-black transition-colors duration-[400ms]"
                 role="menuitem"
               >
                 {option}
