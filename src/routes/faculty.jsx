@@ -9,7 +9,7 @@ function faculty() {
         <h1 className="font-semibold text-[42px]">Faculty Of CS/IT</h1>
         <div className="w-full flex-wrap gap-y-24 font-sans flex flex-row justify-center items-center px-8 gap-8">
           <Card2
-            image="umais_upscaled.jpg"
+            image="umais_upscaled.webp"
             name="Muhammad Umais"
             address="umais@halariet.com"
             bio="Passionate Web developer, proficient in both front-end and back-end"

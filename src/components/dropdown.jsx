@@ -47,7 +47,7 @@ const Dropdown = ({ options, titlee, links }) => {
       {isOpen && (
         <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg ring-1 bg-[#0F172A] ring-black ring-opacity-5 focus:outline-none">
           <div
-            className="pt-1 bg-white "
+            className="pt-1 n:bg-white lg:bg-transparent "
             role="menu"
             aria-orientation="vertical"
           >

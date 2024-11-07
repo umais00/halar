@@ -84,7 +84,7 @@ const Navbar = () => {
       <ul
         className={`${
           clicked
-            ? "fixed items-center justify-center w-screen h-screen backdrop-blur-sm flex-col flex bg-white text-black z-90 gap-11 text-xl"
+            ? "fixed items-center justify-center w-screen h-screen backdrop-blur-sm flex-col flex n:bg-transparent md:bg-white text-black z-90 gap-11 text-xl"
             : "n:hidden lg:flex w-[71vw] justify-evenly items-center isolate mix-blend-normal z-10"
         }`}
       >
